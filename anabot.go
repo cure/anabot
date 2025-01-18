@@ -153,16 +153,16 @@ func caesar(r rune, shift int) rune {
 	var s int
 	if r >= 'a' && r <= 'z' {
 		s = int(r) + shift
-		if s >= 'z' {
+		if s > 'z' {
 			s -= 26
-		} else if s <= 'a' {
+		} else if s < 'a' {
 			s += 26
 		}
 	} else if r >= 'A' && r <= 'Z' {
 		s = int(r) + shift
-		if s >= 'Z' {
+		if s > 'Z' {
 			s -= 26
-		} else if s <= 'A' {
+		} else if s < 'A' {
 			s += 26
 		}
 	} else {
