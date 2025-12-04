@@ -16,8 +16,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/cure/slack"
-	"github.com/cure/slack/slackevents"
+	"github.com/slack-go/slack"
+	"github.com/slack-go/slack/slackevents"
 	"github.com/spf13/viper"
 )
 
